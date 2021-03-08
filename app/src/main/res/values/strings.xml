@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AprenderIdioma</string>
+    <string name="Intro">¡Hola! Bienvenid@ a la flamante aventura de aprender inglés, elige entre jugar y aprender, ¡Todo es divertido!</string>
+    <string name="jugar">Jugar</string>
+    <string name="aprender">Aprender</string>
+    <string name="colores">Colores</string>
+    <string name="animales">Animales</string>
+    <string name="trabajos">Trabajos</string>
+    <string name="plantas">Plantas</string>
+    <string name="red">Red</string>
+    <string name="yellow">Yellow</string>
+</resources>
