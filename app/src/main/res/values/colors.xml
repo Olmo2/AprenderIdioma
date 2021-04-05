@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gris_claro">#60696969</color>
     <color name="yellow">#FFFF00</color>
+    <color name="Green">#3EA214</color>
+    <color name="teal">#008080</color>
+    <color name="lime">#CCFF00</color>
+    <color name="brown">#8B4513</color>
+    <color name="active">#59D500FC</color>
 </resources>

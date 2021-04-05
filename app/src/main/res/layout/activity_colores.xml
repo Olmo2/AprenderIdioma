@@ -8,28 +8,165 @@
     android:background="@drawable/gradient_list"
     tools:context=".Colores">
 
-    <Button
-        android:id="@+id/buttonRed"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/red"
-        android:text="@string/red"
-        app:backgroundTint="@android:color/holo_red_dark"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="0dp">
 
-    <Button
-        android:id="@+id/buttonYellow"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/yellow"
-        android:text="@string/yellow"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/yellow"
-        app:layout_constraintStart_toEndOf="@+id/buttonRed"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewPrimary"
+                android:layout_width="363dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Primary Colors"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/buttonRed"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/red"
+                android:text="@string/red"
+                app:backgroundTint="@android:color/holo_red_dark"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPrimary" />
+
+            <Button
+                android:id="@+id/buttonYellow"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/yellow"
+                android:text="@string/yellow"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/yellow"
+                app:layout_constraintEnd_toStartOf="@+id/buttonBlue"
+                app:layout_constraintStart_toEndOf="@+id/buttonRed"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPrimary" />
+
+            <Button
+                android:id="@+id/buttonBlue"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/blue"
+                android:text="@string/blue"
+                app:backgroundTint="@android:color/holo_blue_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPrimary" />
+
+            <TextView
+                android:id="@+id/textViewSecondary"
+                android:layout_width="363dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Secondary Colors"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonRed" />
+
+            <Button
+                android:id="@+id/buttonPurple"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/purple"
+                android:text="@string/purple"
+                app:backgroundTint="@android:color/holo_purple"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSecondary" />
+
+            <Button
+                android:id="@+id/buttonGreen"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/green"
+                android:text="@string/green"
+                app:backgroundTint="@color/Green"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSecondary" />
+
+            <Button
+                android:id="@+id/buttonOrange"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/orange"
+                android:text="@string/orange"
+                android:textColor="@color/black"
+                app:backgroundTint="@android:color/holo_orange_dark"
+                app:layout_constraintEnd_toStartOf="@+id/buttonPurple"
+                app:layout_constraintStart_toEndOf="@+id/buttonGreen"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSecondary" />
+
+            <TextView
+                android:id="@+id/textViewTertiary"
+                android:layout_width="363dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Tertiary Colors"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonOrange" />
+
+            <Button
+                android:id="@+id/buttonBrown"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/purple"
+                android:text="@string/brown"
+                app:backgroundTint="@color/brown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTertiary" />
+
+            <Button
+                android:id="@+id/buttonTeal"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/blue"
+                android:text="@string/teal"
+                app:backgroundTint="@color/teal_700"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTertiary" />
+
+            <Button
+                android:id="@+id/buttonLime"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/orange"
+                android:text="@string/lime"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/lime"
+                app:layout_constraintEnd_toStartOf="@+id/buttonBrown"
+                app:layout_constraintStart_toEndOf="@+id/buttonTeal"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTertiary" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

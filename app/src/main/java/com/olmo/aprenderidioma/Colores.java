@@ -12,7 +12,7 @@ import android.widget.Button;
 public class Colores extends AppCompatActivity implements View.OnClickListener {
 
 
-    Button buttonRed,buttonYellow;
+    Button buttonRed,buttonYellow,buttonBlue,buttonGreen,buttonOrange,buttonPurple,buttonLime,buttonBrown;
     MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,24 @@ public class Colores extends AppCompatActivity implements View.OnClickListener {
 
         buttonYellow = findViewById(R.id.buttonYellow);
         buttonYellow.setOnClickListener(this);
+
+        buttonBlue = findViewById(R.id.buttonBlue);
+        buttonBlue.setOnClickListener(this);
+
+        buttonGreen = findViewById(R.id.buttonGreen);
+        buttonGreen.setOnClickListener(this);
+
+        buttonOrange = findViewById(R.id.buttonOrange);
+        buttonOrange.setOnClickListener(this);
+
+        buttonPurple = findViewById(R.id.buttonPurple);
+        buttonPurple.setOnClickListener(this);
+
+        buttonLime = findViewById(R.id.buttonLime);
+        buttonLime.setOnClickListener(this);
+
+        buttonBrown = findViewById(R.id.buttonBrown);
+        buttonBrown.setOnClickListener(this);
 
         ConstraintLayout constraintLayout = findViewById(R.id.layoutColores);
         AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
@@ -45,6 +63,36 @@ public class Colores extends AppCompatActivity implements View.OnClickListener {
                 mp = MediaPlayer.create(this, R.raw.yellow);
                 mp.start();
                 break;
+            case R.id.buttonBlue:
+                mp = MediaPlayer.create(this, R.raw.blue);
+                mp.start();
+                break;
+            case R.id.buttonGreen:
+                mp = MediaPlayer.create(this, R.raw.green);
+                mp.start();
+                break;
+            case R.id.buttonOrange:
+                mp = MediaPlayer.create(this, R.raw.orange);
+                mp.start();
+                break;
+            case R.id.buttonPurple:
+                mp = MediaPlayer.create(this, R.raw.purple);
+                mp.start();
+                break;
+            case R.id.buttonTeal:
+                mp = MediaPlayer.create(this, R.raw.teal);
+                mp.start();
+                break;
+            case R.id.buttonLime:
+                mp = MediaPlayer.create(this, R.raw.lime);
+                mp.start();
+                break;
+            case R.id.buttonBrown:
+                mp = MediaPlayer.create(this, R.raw.brown);
+                mp.start();
+                break;
+
+
 
 
         }
