@@ -5,14 +5,11 @@
     android:id="@+id/layoutColores"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_list"
-    tools:context=".Colores">
+    android:background="@drawable/gradient_list">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -22,11 +19,11 @@
                 android:id="@+id/textViewPrimary"
                 android:layout_width="363dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
                 android:gravity="center"
                 android:text="Primary Colors"
                 android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -73,11 +70,11 @@
                 android:id="@+id/textViewSecondary"
                 android:layout_width="363dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
                 android:gravity="center"
                 android:text="Secondary Colors"
                 android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/buttonRed" />
 
@@ -122,11 +119,11 @@
                 android:id="@+id/textViewTertiary"
                 android:layout_width="363dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
                 android:gravity="center"
                 android:text="Tertiary Colors"
                 android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/buttonOrange" />
 
