@@ -12,7 +12,7 @@ import android.widget.Button;
 public class Colores extends AppCompatActivity implements View.OnClickListener {
 
 
-    Button buttonRed,buttonYellow,buttonBlue,buttonGreen,buttonOrange,buttonPurple,buttonLime,buttonBrown;
+    Button buttonRed,buttonYellow,buttonBlue,buttonGreen,buttonOrange,buttonPurple,buttonTeal,buttonLime,buttonBrown;
     MediaPlayer mp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,9 @@ public class Colores extends AppCompatActivity implements View.OnClickListener {
 
         buttonPurple = findViewById(R.id.buttonPurple);
         buttonPurple.setOnClickListener(this);
+
+        buttonTeal = findViewById(R.id.buttonTeal);
+        buttonTeal.setOnClickListener(this);
 
         buttonLime = findViewById(R.id.buttonLime);
         buttonLime.setOnClickListener(this);
